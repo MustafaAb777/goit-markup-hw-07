@@ -875,7 +875,7 @@ button{
 /* portfolio */
 
 .portfolio-section{
-    padding: 96px 0 120px
+   padding: 96px 0 120px
 }
 
 .button-list{
@@ -1303,4 +1303,4 @@ button{
 .mobile-menu-link:hover,
 .mobile-menu-link:focus{
     color: var(--color-iris);
-}.
+}
