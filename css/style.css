@@ -542,7 +542,7 @@ button{
 }
 
 .team-container{
-    padding: 32px 0
+    padding: 32px 0;
 }
 
 .socials{
@@ -1298,9 +1298,4 @@ button{
     margin-bottom: 40px;
     color: var(--color-navy-blue);
     transition: color var(--animation-speed);
-}
-
-.mobile-menu-link:hover,
-.mobile-menu-link:focus{
-    color: var(--color-iris);
 }
