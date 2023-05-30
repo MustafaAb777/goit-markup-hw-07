@@ -983,7 +983,7 @@ button{
     align-items: center;
     justify-content: center;
 
-    background: rgba(46, 47, 66, 0.4);
+    background: var(--color-grey);
     transition: opacity var(--animation-speed), visibility var(--animation-speed);
 }
 
@@ -1003,13 +1003,13 @@ button{
     left: 50%;
     padding: 72px 16px 24px;
     background: var(--color-dairy);
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 1px #00000024, 0px 1px 3px #0000001f, 0px 2px 1px #00000033;
     border-radius: 4px;
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--animation-speed);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .modal {
     padding: 72px 24px 24px;
     width: 408px;
@@ -1030,7 +1030,7 @@ button{
     height: 24px;
     border-radius: 50%;
     background: var(--color-cornflower);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid #0000001a;
     color: var(--color-navy-blue);
     transition: background-color var(--animation-speed), border var(--animation-speed);
 }
@@ -1090,7 +1090,7 @@ button{
 
     outline: transparent;
     border-radius: 4px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
+    border: 1px solid #2e2f4266;
     color: var(--color-navy-blue);
     transition: transform var(--animation-speed), outline var(--animation-speed);
 }
@@ -1299,3 +1299,5 @@ button{
     color: var(--color-navy-blue);
     transition: color var(--animation-speed);
 }
+}
+
