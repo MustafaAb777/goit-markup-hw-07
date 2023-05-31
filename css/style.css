@@ -98,7 +98,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 img {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -337,8 +337,36 @@ button{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img_retina/Dark-bg-mob@x.jpg);
     background-color: var(--color-navy-blue); 
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-section{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img_retina/Dark-bg-mob@2x.jpg);
+  }
+}
+
+@media only screen and (min-width: 429px) {
+  .hero-section{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img_retina/Dark-bg-tab@x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero-section{
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img_retina/Dark-bg-tab@2x.jpg);
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .hero-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img_retina/Dark-bg-desc@x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero-section{
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img_retina/Dark-bg-desc@2x.jpg);
+    }
+  }
 }
 
 @media only screen and (min-width: 1158px) {
