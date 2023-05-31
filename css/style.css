@@ -763,12 +763,19 @@ button{
 @media only screen and (min-width: 768px) {
   .footer-content {
     text-align: left;
+    margin-bottom: 0;
   }
 }
 
 .footer-socials-list{
     display: flex;
     gap: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-socials-list {
+    margin-top: 16px;
+  }
 }
 
 .footer-socials-item{
@@ -782,11 +789,17 @@ button{
 }
 
 .footer-form{
-    /* display: flex;
+    display: flex;
     flex-wrap: wrap;
     gap: 16px;
-    width: 100%;
-} */
+    justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-form {
+    display: block;
+  }
+}
 
 @media only screen and (min-width: 1158px) {
   .footer-form{
@@ -795,15 +808,18 @@ button{
 }
 
 .footer-form-container {
-    /* display: flex;
-    flex-direction: column;
-    width: 100%; */
     text-align: center;
 }
 
+@media only screen and (min-width: 1158px) {
+  .footer-form-container {
+    display: flex;
+  }
+}
+
+
 
 .footer-form-field {
-    /* width: 100%; */
     height: 40px;
     outline: transparent;
     background-color: transparent;
@@ -825,6 +841,13 @@ button{
     width: 264px;
   }
 }
+
+@media only screen and (min-width: 1158px) {
+  .footer-form-field {
+    margin-top: 16px;
+  }
+}
+
 
 .footer-form-field::placeholder{
     color: var(--color-white);
@@ -852,6 +875,12 @@ button{
     background-color: var(--color-iris);
 
     transition: background-color var(--animation-speed), box-shadow var(--animation-speed) ;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-form-btn {
+    margin-left: 24px;
+  }
 }
 
 .footer-form-btn:hover,
@@ -983,7 +1012,7 @@ button{
     align-items: center;
     justify-content: center;
 
-    background: var(--color-grey);
+    background: rgba(46, 47, 66, 0.4);
     transition: opacity var(--animation-speed), visibility var(--animation-speed);
 }
 
@@ -1003,13 +1032,13 @@ button{
     left: 50%;
     padding: 72px 16px 24px;
     background: var(--color-dairy);
-    box-shadow: 0px 1px 1px #00000024, 0px 1px 3px #0000001f, 0px 2px 1px #00000033;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.141), 0px 1px 3px rgba(0, 0, 0, 0.122), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--animation-speed);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 427.8px) {
   .modal {
     padding: 72px 24px 24px;
     width: 408px;
@@ -1299,5 +1328,5 @@ button{
     color: var(--color-navy-blue);
     transition: color var(--animation-speed);
 }
-}
+
 
